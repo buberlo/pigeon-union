@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#1f2430" />
+    <meta
+      name="description"
+      content="A cozy browser management game about hiring pigeons, negotiating contracts, and keeping the plaza happy."
+    />
+    <title>Plaza Pigeon Co.</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🕊️</text></svg>"
+    />
+    <style>
+      :root {
+        --bg-0: #1f2430;
+        --bg-1: #2a3140;
+        --accent: #ffd166;
+        --text: #f7f3e8;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        overflow: hidden;
+        background:
+          radial-gradient(circle at 20% 10%, rgba(255, 209, 102, 0.12), transparent 32%),
+          radial-gradient(circle at 80% 90%, rgba(126, 187, 255, 0.1), transparent 36%),
+          linear-gradient(160deg, var(--bg-0), var(--bg-1));
+        color: var(--text);
+        font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+      }
+
+      #game {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+
+      canvas {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 18px;
+        box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      }
+
+      noscript {
+        display: grid;
+        place-items: center;
+        width: 100%;
+        height: 100%;
+        font-size: 1.1rem;
+        letter-spacing: 0.08em;
+        opacity: 0.8;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="game">
+      <noscript>
+        <p>Enable JavaScript to hire your first pigeon and open the plaza.</p>
+      </noscript>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
