@@ -1,0 +1,40 @@
+{
+  "name": "pigeon-plaza",
+  "version": "1.0.0",
+  "description": "A cozy browser management game where you hire skilled pigeons, negotiate bread, crumb, coop, and dental contracts, and survive strikes from cats, wind, mayoral photo ops, and union seagulls.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "typecheck": "tsc --noEmit",
+    "clean": "node -e \"require('fs').rmSync('dist', { recursive: true, force: true })\""
+  },
+  "keywords": [
+    "phaser",
+    "typescript",
+    "zustand",
+    "howler",
+    "management",
+    "cozy",
+    "pigeons",
+    "browser-game"
+  ],
+  "author": "Pigeon Plaza Studio",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "howler": "^2.2.4",
+    "phaser": "^3.85.2",
+    "zustand": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/howler": "^2.2.11",
+    "@types/node": "^20.14.10",
+    "typescript": "^5.5.4",
+    "vite": "^5.4.8"
+  }
+}
